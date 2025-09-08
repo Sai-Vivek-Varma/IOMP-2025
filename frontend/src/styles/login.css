@@ -1,0 +1,456 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #ffffff;
+    min-height: 100vh;
+    line-height: 1.5;
+    overflow: hidden;
+    /* Prevent horizontal scroll */
+}
+
+/* Layout components */
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    /* Make children stretch to full height */
+    min-height: 100vh;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.login-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    /* Limit width for better readability */
+    padding: 24px 16px;
+    margin: 0 auto;
+}
+
+.login-form-container {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 74px;
+}
+
+.welcome-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 18px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.password-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 4px;
+}
+
+.divider-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 34px;
+    position: relative;
+}
+
+.divider-line {
+    width: 100%;
+    height: 2px;
+    background-color: #f5f5f5;
+}
+
+.divider-text {
+    background-color: #ffffff;
+    padding: 0 8px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.social-login-section {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    width: 100%;
+}
+
+.social-buttons {
+    display: flex;
+    gap: 22px;
+    width: 100%;
+}
+
+.image-section {
+    position: relative;
+    width: 50%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botanical-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.image-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.4) 0%,
+            rgba(0, 0, 0, 0.2) 100%);
+    z-index: 1;
+}
+
+/* Typography */
+.welcome-title {
+    font-size: 28px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    line-height: 1.3;
+    text-align: left;
+    color: #000000;
+    margin-bottom: 8px;
+}
+
+.welcome-subtitle {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    line-height: 1.4;
+    text-align: left;
+    color: #333;
+}
+
+.input-label {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    line-height: 1.4;
+    text-align: left;
+    color: #000000;
+    margin-bottom: 6px;
+}
+
+.forgot-password {
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    line-height: 1.4;
+    color: #0c2991;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.checkbox-label {
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    line-height: 1.4;
+    color: #000000;
+}
+
+.signup-text {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: center;
+    color: #000000;
+}
+
+.signup-link {
+    color: #0f3cde;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 4px;
+}
+
+.or-text {
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    line-height: 1.4;
+    color: #666;
+}
+
+/* Form elements */
+.form-input {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000000;
+    border: 1px solid #d9d9d9;
+    border-radius: 10px;
+    padding: 12px 16px;
+    width: 100%;
+    transition: border-color 0.2s ease;
+}
+
+.form-input::placeholder {
+    color: #d9d9d9;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.checkbox {
+    width: 16px;
+    height: 16px;
+}
+
+.login-button {
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    line-height: 20px;
+    color: #ffffff;
+    background-color: #3a5b22;
+    border: 1px solid #3a5b22;
+    border-radius: 10px;
+    padding: 6px 34px;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.social-button {
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    line-height: 18px;
+    color: #000000;
+    background-color: #ffffff;
+    border: 1px solid #d9d9d9;
+    border-radius: 10px;
+    padding: 10px 16px;
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+}
+
+/* Interactive states */
+.form-input:focus {
+    outline: 2px solid #3a5b22;
+    outline-offset: 2px;
+    border-color: #3a5b22;
+}
+
+.login-button:hover {
+    background-color: #2d4419;
+    transform: translateY(-1px);
+}
+
+.login-button:active {
+    transform: translateY(0);
+}
+
+.social-button:hover {
+    background-color: #f9f9f9;
+    border-color: #bbb;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.signup-link:hover {
+    text-decoration: underline;
+}
+
+/* Signup specific styles */
+.signup-page .login-section {
+    justify-content: flex-start;
+    overflow-y: hidden;
+}
+
+.signup-page .form-section {
+    margin-top: 0;
+    gap: 0.5rem;
+}
+
+.signup-page .login-button {
+    margin: 0.25rem 0;
+}
+
+.signup-page .divider-section {
+    margin: 1rem 0;
+}
+
+.signup-page .social-buttons {
+    margin: 0.5rem 0;
+}
+
+/* Ensure the form fits in viewport */
+@media (max-height: 800px) {
+    .signup-page .login-section {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .signup-page .login-form-container {
+        gap: 1rem;
+    }
+
+    .signup-page .input-group {
+        margin-bottom: 0.75rem;
+    }
+}
+
+/* Responsive media queries */
+@media (min-width: 640px) {
+    .login-section {
+        padding: 32px 24px;
+    }
+
+    .welcome-title {
+        font-size: 28px;
+        line-height: 42px;
+    }
+
+    .welcome-subtitle {
+        font-size: 15px;
+        line-height: 22px;
+    }
+}
+
+@media (min-width: 768px) {
+    .main-container {
+        flex-direction: row;
+    }
+
+    .login-section {
+        width: 50%;
+        padding: 48px 32px;
+    }
+
+    .image-section {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .main-container {
+        justify-content: flex-start;
+    }
+
+    .login-section {
+        width: 45%;
+        max-width: 500px;
+        padding: 2rem 3rem;
+        margin: 0 0 0 2%;
+        overflow-y: hidden;
+        /* Allow scrolling only if content is too tall */
+        max-height: 100vh;
+    }
+
+    .login-form-container {
+        gap: 2.5rem;
+        padding: 1rem 0;
+    }
+
+    .welcome-header {
+        margin-bottom: 1rem;
+    }
+
+    .form-section {
+        gap: 1.25rem;
+    }
+
+    .image-section {
+        width: 55%;
+        height: 100vh;
+        position: fixed;
+        right: 0;
+        top: 0;
+    }
+}
+
+@media (min-width: 1440px) {
+    .login-section {
+        padding: 3rem 5rem;
+    }
+
+    .login-form-container {
+        gap: 3rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    .login-section {
+        padding: 80px 64px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .image-section {
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .image-section {
+        width: 100%;
+        height: 300px;
+        min-height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .image-section {
+        height: 250px;
+    }
+}
