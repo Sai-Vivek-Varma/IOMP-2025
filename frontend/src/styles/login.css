@@ -10,7 +10,7 @@ body {
     background-color: #ffffff;
     min-height: 100vh;
     line-height: 1.5;
-    overflow: hidden;
+    overflow-x: auto;
     /* Prevent horizontal scroll */
 }
 
