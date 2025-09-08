@@ -1,11 +1,11 @@
 # 🚮 CleanVision ✨  
 **Automated Garbage Detection and Alert System for Post Offices using YOLOv5**
 
-CleanVision is a computer vision-based system developed during the **Smart India Hackathon (SIH)** to automate cleanliness monitoring across **post office premises**. It uses a custom-trained **YOLOv5** model to detect garbage in surveillance footage, trigger real-time alerts, and display actionable insights via an interactive dashboard.
+CleanVision is a computer vision-based system developed to automate cleanliness monitoring across **post office premises**. It uses a custom-trained **YOLOv5** model to detect garbage in surveillance footage, trigger real-time alerts, and display actionable insights via an interactive dashboard.
 
 The project aims to ensure **hygiene, transparency**, and **accountability** within postal divisions.
 
-🔗 **GitHub Repo**: [https://github.com/dopTrashTrackers/website.git](https://github.com/dopTrashTrackers/website.git)
+🔗 **GitHub Repo**: [https://github.com/Sai-Vivek-Varma/IOMP-2025.git](https://github.com/Sai-Vivek-Varma/IOMP-2025.git)
 
 ---
 
@@ -101,7 +101,7 @@ Built using **React.js**, the dashboard offers a dynamic, real-time view of acti
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/dopTrashTrackers/website.git
+git clone https://github.com/Sai-Vivek-Varma/IOMP-2025.git
 cd website
 ```
 ## 🚀 Getting Started
@@ -174,16 +174,11 @@ git push origin feature/your-feature-name
 
 Open a Pull Request from your forked repository back to the main branch of the original project.
 
-### 🏁 Acknowledgments
-🏆 Finalist – Smart India Hackathon 2024
-
-🧹 Inspired by the Swachh Bharat Mission
-
 ### 👨‍💻 Team Members
 
-| 🌐 Web & Dashboard Development | 🤖 AI/ML Model Development     |
-|-------------------------------|-------------------------------|
-| Souvik Maity                  | Nidhi Satyapriya              |
-| Abhijeet Awasthi              | Rahul Kumar                   |
-|                               | Shraddha Sahu                 |
-|                               | Shiekh Mahammad Arzu          |
+| 🌐 Dashboard and 🤖 AI/ML Model Development     |
+|--------------------------------------------------|
+| Sai Vivek Varma                                  |
+| Chandra Harsha                                   |
+| Sobhana                                          |
+| Chaithanya                                       |
