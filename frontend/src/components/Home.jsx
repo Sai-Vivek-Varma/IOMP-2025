@@ -15,7 +15,7 @@ function Home() {
       
       <Logos/>  
       <CardSlider/>
-      <Modi/>
+     
       <OfficeList/>
       <GarbageDetectionMap/>
       <AccordionCustomStyles/>
